@@ -1,0 +1,29 @@
+.content-wrapper {
+    background-color: #ffffff;
+    
+    .content-inner {
+        h1 {
+            background-color: rgb(3, 169, 244);
+            color: white;
+            padding: 8px;
+            font-size: 3em;
+            text-align: center;
+            margin: 0;
+
+            @media (max-width: 768px) {
+                text-align: left;
+            }
+
+            .heading__burger {
+                text-decoration: none;
+                color: white;
+                padding: 8px;
+                cursor: pointer;
+                
+                @media (min-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

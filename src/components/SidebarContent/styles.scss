@@ -1,0 +1,28 @@
+.sidebar-wrapper {
+    .sidebar-inner {
+        .sidebar__header {
+            background-color: rgb(3, 169, 244);
+            color: white;
+            padding: 16px;
+            font-size: 1.5em;
+        }
+
+        .sidebar__content {
+            padding: 16px;
+            a {
+                display: block;
+                padding: 16px 0px;
+                color: rgb(117, 117, 117);
+                text-decoration: none;
+
+                &:hover {
+                    color: rgb(3, 169, 244);
+                }
+
+                &.active {
+                    color: rgb(3, 169, 244);
+                }
+            }
+        }
+    }
+}
