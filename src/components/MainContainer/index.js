@@ -10,7 +10,8 @@ type Props = {
 };
 
 type State = {  
-
+    sidebarDocked: boolean,
+    sidebarOpen: boolean,
 };
 
 const mql = window.matchMedia(`(min-width: 768px)`);
@@ -24,20 +25,20 @@ export default class MainContainer extends React.Component<Props, State> {
             sidebarOpen: false
         }
 
-        this.mediaQueryChanged = this.mediaQueryChanged.bind(this);
-        this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
+        //this.mediaQueryChanged = this.mediaQueryChanged.bind(this);
+        //this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
     }
     
     componentWillMount() {
-        mql.addListener(this.mediaQueryChanged);
+        mql.addListener(this.mediaQueryChanged.bind(this));
     }
 
     componentWillUnmount() {
-        mql.removeListener(this.mediaQueryChanged);
+        mql.removeListener(this.mediaQueryChanged.bind(this));
     }
 
-    onSetSidebarOpen(open) {
-        this.setState({ sidebarOpen: open });
+    onSetSidebarOpen() {
+        this.setState({ sidebarOpen: !this.state.sidebarOpen });
     }
 
     mediaQueryChanged() {
@@ -62,11 +63,11 @@ export default class MainContainer extends React.Component<Props, State> {
                 contentClassName="content-wrapper"
                 docked={sidebarDocked}
                 open={sidebarOpen}
-                onSetOpen={this.onSetSidebarOpen}
+                onSetOpen={() => {this.onSetSidebarOpen()}}
             >   
                 <div className="content-inner">
                     <div className="heading">
-                        <h1><span className="heading__burger" onClick={this.onSetSidebarOpen}>=</span>Demo App</h1>
+                        <h1><span className="heading__burger" onClick={() => {this.onSetSidebarOpen()}}>=</span>Demo App</h1>
                     </div>
 
                     <ContentBody />

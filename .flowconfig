@@ -1,7 +1,6 @@
 [ignore]
 ./node_modules/**/*
 ./build/**/*
-./src/server/**/*
 
 [include]
 ./src/**/*
@@ -15,6 +14,7 @@ module.name_mapper.extension='scss' -> '<PROJECT_ROOT>/flow/CSSModule.js.flow'
 module.name_mapper.extension='png' -> '<PROJECT_ROOT>/flow/WebpackAsset.js.flow'
 module.name_mapper.extension='jpg' -> '<PROJECT_ROOT>/flow/WebpackAsset.js.flow'
 module.name_mapper.extension='md' -> '<PROJECT_ROOT>/flow/WebpackAsset.js.flow'
+module.name_mapper='..\/types' -> '<PROJECT_ROOT>/src/types/'
 esproposal.class_static_fields=enable
 esproposal.class_instance_fields=enable
 

@@ -6,12 +6,17 @@ import { connect } from 'react-redux';
 import Actions from '../../redux/actions';
 import { bindActionCreators } from 'redux';
 
-type Props = {    
+//import type {State} as TypeState from '../../types';
+import type {Action} from '../../types';
+import type {AppState, AppData} from '../../types/app_data'
 
+type Props = {    
+    app_data: AppData,
+    actions: any,
 };
 
 type State = {  
-
+    _welcome_msg: string,
 };
 
 @connect((state) => {

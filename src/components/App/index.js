@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import MainContainer from '../../containers/MainContainer';
+import MainContainer from '../../container/MainContainer';
 import { hot } from 'react-hot-loader';
 
 type Props = {}; 
