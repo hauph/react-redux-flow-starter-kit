@@ -1,7 +1,5 @@
 # react-redux-flow-starter-kit
 
----
-
 This is a boilerplate to build a Front-end web application using React, Redux, SCSS, Flow and Webpack. It is also configured with webpack-dev-server, eslint, prettier and babel.
 
 - [react-redux-flow-starter-kit](#react-redux-flow-starter-kit)
