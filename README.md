@@ -6,6 +6,7 @@ This is a boilerplate to build a Front-end web application using React, Redux, S
 
 - [react-redux-flow-starter-kit](#react-redux-flow-starter-kit)
   - [Introduction](#introduction)
+    - [Why not just use `create-react-app`?](#why-not-just-use-create-react-app)
     - [Development mode](#development-mode)
   - [Quick Start](#quick-start)
   - [VSCode + ESLint + Prettier](#vscode--eslint--prettier)
@@ -21,7 +22,7 @@ This boilerplate/starter kit is customized from [crsandeep's boilerplate](https:
 
 This application is configured with [Airbnb's ESLint rules](https://github.com/airbnb/javascript) and formatted through [prettier](https://prettier.io/).
 
-#### Why not just use `create-react-app`?
+### Why not just use `create-react-app`?
 
 To me it is very limited. It is still a good starter kit and customizable though; however I wanted something else. So I went through the internet and found out [crsandeep's boilerplate](https://github.com/crsandeep/simple-react-full-stack), which was very impressive.
 
@@ -55,12 +56,10 @@ npm run flow
 
 ## Folder Structure
 
-All the source code will be inside **src** directory. Inside src, there is client and server directory. All the frontend code (react, css, js and any other assets) will be in client directory. Backend Node.js/Express code will be in the server directory.
-
 ```bash
 .
-├── /node_modules/                    # 3rd-party libraries and utilities
 ├── /build/                           # All the generated files will go here, and will run from this folder
+├── /node_modules/                    # 3rd-party libraries and utilities
 ├── /public/                          # Images, script, stylesheet etc.
 ├── /src/                             # The source code of the application
 │   ├── /components/                  # All React components' folders will be created in this folder. 
