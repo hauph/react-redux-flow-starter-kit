@@ -63,8 +63,8 @@ npm run flow
 ├── /public/                          # Images, script, stylesheet etc.
 ├── /src/                             # The source code of the application
 │   ├── /components/                  # All React components' folders will be created in this folder. 
-│   │   ├── /HomePage/                    # A sample component folder
-│   │   │   ├── index.js             # Component's compulsory file
+│   │   ├── /HomePage/                # A sample component folder
+│   │   │   ├── index.js              # Component's compulsory file
 │   │   │   ├── styles.scss           # Component's scss file (optional)
 │   ├── /container/                   # App container component
 │   ├── /redux/                       # State management
