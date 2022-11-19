@@ -45,7 +45,7 @@
     "flow-bin": "^0.81.0",
     "flow-webpack-plugin": "^1.2.0",
     "flowtype-loader": "^0.2.2",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^0.4.2",
     "node-sass": "^4.12.0",
     "react-hot-loader": "^4.8.8",
@@ -55,7 +55,7 @@
     "url-loader": "^1.0.1",
     "webpack": "^4.32.2",
     "webpack-clear-console": "^1.0.3",
-    "webpack-cli": "^3.3.2",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.4.1",
     "webpack-merge": "^4.2.1"
   }
